@@ -50,8 +50,8 @@
 
 					{% if site.weixin_username %}
 					<li>
-						<a href="javascript:void(0);">
-							<div id="kwcode" style="display: block">
+						<a id="weixin" href="javascript:void(0);">
+							<div id="kwcode" style="display: none">
 								<img src="/img/weixinimg.jpg">
 							</div>
 							<span class="fa-stack fa-lg">
@@ -128,7 +128,7 @@
 		box-sizing: border-box;
 		background-color: #fff;
 		position: absolute;
-		top: -230px;
+		top: -210px;
 		left: 50%;
 		margin-left: -100px;
 		border-radius: 6px;
@@ -136,6 +136,14 @@
 		border: 1px solid #ddd;
 	}
 </style>
+<!-- kwcode -->
+<script type="text/javascript">
+	$("#weixin").hover(function(){
+		$("#kwcode").show();
+	}),function({
+		$("#kwcode").hide();
+	})
+</script>
 
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
