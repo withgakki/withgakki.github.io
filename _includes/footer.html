@@ -50,10 +50,15 @@
 
 					{% if site.weixin_username %}
 					<li>
-						<span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-weixin fa-stack-1x fa-inverse"></i>
-                        </span>
+						<a href="javascript:void(0);">
+							<div id="kwcode" style="display: block">
+								<img src="/img/weixinimg.jpg">
+							</div>
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-weixin fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
 					</li>
 					{% endif %}
 
@@ -114,6 +119,23 @@
         </div>
     </div>
 </footer>
+
+<style>
+	#kwcode {
+		width: 200px;
+		height: 220px;
+		box-shadow: 0 3px 10px rgba(0,0,0,.15);
+		box-sizing: border-box;
+		background-color: #fff;
+		position: absolute;
+		top: -230px;
+		left: 50%;
+		margin-left: -100px;
+		border-radius: 6px;
+		padding: 15px;
+		border: 1px solid #ddd;
+	}
+</style>
 
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
