@@ -17,11 +17,13 @@ tags:                               #标签
 
 ### 介绍
 
-相信 @RequestParam 已经用的很多了，就不多说了，主要说一下 @RequestBody  
+相信 @RequestParam 已经用的很多了，就不多说了，主要说一下 @RequestBody
+
 @RequestBody主要用来接收前端传递给后端的json字符串中的数据(请求体中的数据的)；GET方式无请求体，所以使用@RequestBody接收数据时，前端不能使用GET方式提交数据，而是用POST方式进行提交。在后端的同一个接收方法里，@RequestBody()与@RequestParam()可以同时使用，@RequestBody最多只能有一个，而@RequestParam()可以有多个。
 > 一个请求，只有一个RequestBody；一个请求，可以有多个RequestParam。
 
-当同时使用 @RequestParam 和 @RequestBody 时，@RequestParam 指定的参数可以是普通元素、数组、集合、对象等等(即,当 @RequestBody 与 @RequestParam 可以同时使用时，原 SpringMVC 接收参数的机制不变，只不过 **RequestBody 接收的是请求体里面的数据；而 RequestParam 接收的是 key-value 里面的参数**，所以它会被切面进行处理从而可以用普通元素、数组、集合、对象等接收)。  
+当同时使用 @RequestParam 和 @RequestBody 时，@RequestParam 指定的参数可以是普通元素、数组、集合、对象等等(即,当 @RequestBody 与 @RequestParam 可以同时使用时，原 SpringMVC 接收参数的机制不变，只不过 **RequestBody 接收的是请求体里面的数据；而 RequestParam 接收的是 key-value 里面的参数**，所以它会被切面进行处理从而可以用普通元素、数组、集合、对象等接收)。
+
 如果参数前不写 @RequestParam(xx) 的话，那么就前端可以有可以没有对应的xx名字才行，如果有xx名的话，那么就会自动匹配；没有的话，请求也能正确发送。  
 如果后端参数是一个对象，且该参数前是以@RequestBody修饰的，那么前端传递json参数时，必须满足以下要求：
 
