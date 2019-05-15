@@ -82,7 +82,7 @@ public String test(@RequestBody String jsonString){
 }
 ```
 
-![Postman测试](http://prfm9pn5e.bkt.clouddn.com/20180709160600561.png)
+![Postman测试](https://upload-images.jianshu.io/upload_images/17260324-d425158d021c56ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ***
 
@@ -104,7 +104,7 @@ public String test(@RequestBody User user){
 
 使用PostMan测试：
 
-![Postman测试](http://prfm9pn5e.bkt.clouddn.com/test1.png)
+![Postman测试](https://upload-images.jianshu.io/upload_images/17260324-2ac7dcd8700e41d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ***
 
@@ -126,7 +126,7 @@ public String test(@RequestBody Team team){
 
 使用PostMan测试：
 
-![Postman测试](http://prfm9pn5e.bkt.clouddn.com/test2.png)
+![Postman测试](https://upload-images.jianshu.io/upload_images/17260324-4a8a1659d8f04394.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ***
 
@@ -192,6 +192,6 @@ $.ajax({
 
 使用PostMan测试：
 
-![PostMan测试](http://prfm9pn5e.bkt.clouddn.com/test4.png)
+![PostMan测试](https://upload-images.jianshu.io/upload_images/17260324-98b82b1c29c585e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 目前就这样，收工。
