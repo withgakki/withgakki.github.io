@@ -67,8 +67,6 @@ layout: default
 				{{ content }}
 
                 <hr style="visibility: hidden;">
-
-
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
@@ -87,6 +85,7 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
+				<hr style="visibility: hidden;">
 
                 <!-- Gitalk 评论 start  -->
                 {% if site.gitalk.enable %}
