@@ -1,8 +1,8 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
-    fixed: true,
+    // fixed: true,
     // mini: true,
-    // autoplay: false,
+    autoplay: false,
     audio: [
       {
         name: "像鱼",
