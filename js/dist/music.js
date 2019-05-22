@@ -8,7 +8,7 @@ const ap = new APlayer({
       {
         name: "像鱼",
         artist: '王贰浪',
-        url: 'http://www.ytmp3.cn/down/56782.mp3',
+        url: 'http://music.163.com/song/media/outer/url?id=1331819951.mp3',
         cover: 'http://p1.music.126.net/ejEPGN6ulPSgCBXGq7dgqw==/109951163720047382.jpg?param=130y130',
       },
       {
