@@ -11,10 +11,10 @@ const ap = new APlayer({
         cover: 'http://p1.music.126.net/ejEPGN6ulPSgCBXGq7dgqw==/109951163720047382.jpg?param=130y130',
       },
       {
-        name: "天空之城",
-        artist: '李志',
-        url: 'http://www.ytmp3.cn/down/47726.mp3',
-        cover: 'http://p2.music.126.net/xIonZ9I4YtnljJmQzv32hA==/109951163214060584.jpg?param=130y130',
+        name: "消愁",
+        artist: '毛不易',
+        url: 'http://www.ytmp3.cn/down/48860.mp3',
+        cover: 'http://p1.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=130y130',
       },
       {
         name: "借我",
