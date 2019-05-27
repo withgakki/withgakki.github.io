@@ -6,6 +6,12 @@ const ap = new APlayer({
     autoplay: false,
     audio: [
       {
+        name: "Canon",
+        artist: 'Trace Bundy',
+        url: 'http://sc1.111ttt.cn:8282/2015/1/02m/20/95202025178.m4a?tflag=1546606800&pin=97bb2268ae26c20fe093fd5b0f04be80#.mp3',
+        cover: 'http://p2.music.126.net/heAYqigsLfLnv0Dd3yxHCA==/6647647302511150.jpg?param=130y130',
+      },
+      {
         name: "像鱼",
         artist: '王贰浪',
         url: 'http://music.163.com/song/media/outer/url?id=1331819951.mp3',
