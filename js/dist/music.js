@@ -18,10 +18,10 @@ const ap = new APlayer({
         cover: 'http://p1.music.126.net/ejEPGN6ulPSgCBXGq7dgqw==/109951163720047382.jpg?param=130y130',
       },
       {
-        name: "我曾",
-        artist: '隔壁老樊',
-        url: 'http://www.ytmp3.cn/down/59121.mp3',
-        cover: 'http://p2.music.126.net/KK3YNRE9flpcZCYkDS8Z3g==/109951163826159510.jpg?param=130y130',
+        name: "Shoot to Thrill",
+        artist: 'AC/DC',
+        url: 'http://music.163.com/song/media/outer/url?id=3879500.mp3',
+        cover: 'http://p3.music.126.net/9fddDm8I82c3wAXXiqo60A==/347445674377258.jpg?param=640y300',
       },
       {
         name: "借我",
