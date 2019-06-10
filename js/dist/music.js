@@ -26,7 +26,7 @@ const ap = new APlayer({
       {
         name: "借我",
         artist: '谢春花',
-        url: 'http://www.ytmp3.cn/down/34511.mp3',
+        url: 'http://music.163.com/song/media/outer/url?id=408814900.mp3',
         cover: 'http://p2.music.126.net/Eg4cy0_HIF2nrX2gMCsWkQ==/17967119509636556.jpg?param=130y130',
       }
     ]
