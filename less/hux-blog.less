@@ -37,13 +37,13 @@ h1{
 h4{
     font-size: 21px;
 }
-a {
-	color: @gray-dark;
-	&:hover,
-	&:focus {
-		color: @brand-primary;
-	}
-}
+// a {
+// 	color: @gray-dark;
+// 	&:hover,
+// 	&:focus {
+// 		color: @brand-primary;
+// 	}
+// }
 
 a img {
 	&:hover,
@@ -53,20 +53,20 @@ a img {
 }
 
 article{
-	overflow-x : hidden;
+	overflow-x: hidden;
 }
 blockquote {
-	color: @gray;
+	//color: @gray;
 	font-style: italic;
 	font-size: 0.95em;
 	margin: 20px 0 20px;
-	p{
+	p {
 		margin: 0;
 	}
 }
 
 // Utils Style Class can be used in Markdown.
-small.img-hint{
+small.img-hint {
 	display: block;
 	margin-top: -20px;
 	text-align: center;
@@ -99,6 +99,11 @@ select{
 	border: 1px solid #eee !important;
 }
 
+hr {
+	box-sizing: content-box;
+	margin-top: 5%;
+}
+
 hr.small {
 	max-width: 100px;
 	margin: 15px auto;
@@ -123,13 +128,13 @@ pre code{
 }
 
 // In the post.
-.post-container{
-	a{
-		color:#337ab7;
+.post-container {
+	a {
+		//color:#337ab7;
 		// different to @brand-primary
 		&:hover,
 		&:focus {
-			color: @brand-primary;
+			//color: @brand-primary;
 		}
 	}
 	h1,
@@ -368,7 +373,7 @@ pre code{
 				color: @gray-dark;
 				&:hover,
 				&:focus {
-					color: @brand-primary;
+					//color: @brand-primary;
 				}
 			}
 			.nav {
@@ -377,7 +382,7 @@ pre code{
 						color: @gray-dark;
 						&:hover,
 						&:focus {
-							color: @brand-primary;
+							//color: @brand-primary;
 						}
 					}
 				}
@@ -398,7 +403,7 @@ pre code{
 
 .intro-header {
 	background: no-repeat center center;
-	background-color: @gray;
+	background-color: @black;
 	background-attachment: scroll;
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
@@ -488,11 +493,11 @@ pre code{
 
 .post-preview {
 	> a {
-		color: @gray-dark;
+		//color: @gray-dark;
 		&:hover,
 		&:focus {
 			text-decoration: none;
-			color: @brand-primary;
+			//color: @brand-primary;
 		}
 		> .post-title {
 			font-size: 21px;
@@ -519,7 +524,7 @@ pre code{
 			color: @gray-dark;
 			&:hover,
 			&:focus {
-				color: @brand-primary;
+				//color: @brand-primary;
 				text-decoration: underline;
 			}
 		}
@@ -545,12 +550,12 @@ pre code{
 .post-content-preview{
     font-size: 13px;
     font-style: italic;
-    color:#a3a3a3;
+    //color:#a3a3a3;
     &:hover{
-        color: @brand-primary;
+        //color: @brand-primary;
     }
     @media only screen and (min-width: 768px) {
-        font-size:14px;
+        font-size: 14px;
     }
 }
 
@@ -589,7 +594,7 @@ footer {
 			// different to @brand-primary
 			&:hover,
 			&:focus {
-				color: @brand-primary;
+				//color: @brand-primary;
 			}
 		}
 	}
@@ -627,12 +632,12 @@ footer {
 		vertical-align: middle;
 		vertical-align: baseline;
 		opacity: 0;
-		-webkit-transition: top 0.3s ease,opacity 0.3s ease;
-		-moz-transition: top 0.3s ease,opacity 0.3s ease;
-		-ms-transition: top 0.3s ease,opacity 0.3s ease;
-		transition: top 0.3s ease,opacity 0.3s ease;
+		-webkit-transition: top 0.3s ease, opacity 0.3s ease;
+		-moz-transition: top 0.3s ease, opacity 0.3s ease;
+		-ms-transition: top 0.3s ease, opacity 0.3s ease;
+		transition: top 0.3s ease, opacity 0.3s ease;
 	}
-	&::not(:first-child) {
+	&:not(:first-child) {
 		padding-left: 14px;
 		border-left: 1px solid @gray-light;
 	}
@@ -647,12 +652,12 @@ footer {
 
 .floating-label-form-group-with-focus {
 	label {
-		color: @brand-primary;
+		//color: @brand-primary;
 	}
 }
 
 form .row:first-child .floating-label-form-group {
-	border-top: 1px solid @gray-light;
+	//border-top: 1px solid @gray-light;
 }
 
 // Button Styles
@@ -675,8 +680,8 @@ form .row:first-child .floating-label-form-group {
 .btn-default {
 	&:hover,
 	&:focus {
-		background-color: @brand-primary;
-		border: 1px solid @brand-primary;
+		//background-color: @brand-primary;
+		//border: 1px solid @brand-primary;
 		color: white;
 	}
 }
@@ -710,8 +715,8 @@ form .row:first-child .floating-label-form-group {
 		> a:hover,
 		> a:focus {
 			color: white;
-			background-color: @brand-primary;
-			border: 1px solid @brand-primary;
+			//background-color: @brand-primary;
+			//border: 1px solid @brand-primary;
 
 			// V1.6 display title
 			> span{
@@ -737,13 +742,13 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
 	color: white;
 	text-shadow: none;
-	background: @brand-primary;
+	//background: @brand-primary;
 }
 
 ::selection {
 	color: white;
 	text-shadow: none;
-	background: @brand-primary;
+	//background: @brand-primary;
 }
 
 img::selection {
@@ -802,7 +807,7 @@ img::-moz-selection {
 		margin-bottom: 8px;
 		background: #D6D6D6;
 		&:hover, &:active{
-			background-color: #0085a1 !important;
+			//background-color: #0085a1 !important;
 		}
 	}
 	@media only screen and (min-width: 768px) {
@@ -1024,5 +1029,18 @@ img::-moz-selection {
 	color: #ddd;
 }
 
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	text-decoration: none
+}
 
+#news {
+	font-size: 20px;
+	font-family: initial, serif
+}
+
+code {
+	background-color:inherit
+}
 
