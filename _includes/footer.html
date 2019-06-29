@@ -35,23 +35,6 @@
     </div>
 </footer>
 
-<style>
-	#kwcode {
-		width: 200px;
-		height: 200px;
-		box-shadow: 0 3px 10px rgba(0,0,0,.15);
-		box-sizing: border-box;
-		background-color: #fff;
-		position: absolute;
-		top: -210px;
-		left: 50%;
-		margin-left: -100px;
-		border-radius: 6px;
-		padding: 10px;
-		border: 1px solid #ddd;
-	}
-</style>
-
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
@@ -67,15 +50,6 @@
 <script src="{{ "/js/snackbar.js " | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/sw-registration.js " | prepend: site.baseurl }}"></script>
 {% endif %}
-
-<!-- kwcode -->
-<script type="text/javascript">
-	$("#weixin").hover(function(){
-		$("#kwcode").show();
-	},function(){
-		$("#kwcode").hide();
-	})
-</script>
 
 <!-- async load function -->
 <script>
