@@ -98,7 +98,7 @@
       }
     </style>
   <li>
-      <a id="weixin" href="javascript:void(0);">
+      <a name="weixin" href="javascript:void(0);">
           <div id="kwcode" style="display: none">
               <img src="/img/weixinimg.jpg">
           </div>
@@ -111,11 +111,10 @@
   <!-- jQuery -->
   <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
     <script type="text/javascript">
-      $("#weixin").hover(function(){
-        console.log("sss");
-        $("#kwcode").show();
+      $("a[name=weixin]").hover(function(){
+        $(this).find("#kwcode").show();
       },function(){
-        $("#kwcode").hide();
+        $(this).find("#kwcode").hide();
       })
     </script>
   {% endif %}  
