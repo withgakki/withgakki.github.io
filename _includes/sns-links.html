@@ -119,11 +119,13 @@
           </span>
       </a>
   </li>
+  <!-- jQuery -->
+<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
   <script type="text/javascript">
-    document.getElementById("weixin").hover(function(){
-      document.getElementById("kwcode").show();
+    $("#weixin").hover(function(){
+      $("#kwcode").show();
     },function(){
-      document.getElementById("kwcode").hide();
+      $("#kwcode").hide();
     })
   </script>
   {% endif %}              
