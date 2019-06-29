@@ -111,14 +111,24 @@
   <!-- jQuery -->
   <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
     <script type="text/javascript">
-      $("a[name=weixin]:eq(0)").click(function(){
-        $("html,body").animate({scrollTop: $("a[name=weixin]:eq(1)").offset().top}, 1000);
-      })
-      $("a[name=weixin]:eq(1)").hover(function(){
-        $(this).find("#kwcode").show();
-      },function(){
-        $(this).find("#kwcode").hide();
-      })
+      if($("a[name=weixin]").size() = 2){
+        $("a[name=weixin]:eq(0)").click(function(){
+          $("html,body").animate({scrollTop: $("a[name=weixin]:eq(1)").offset().top}, 1000);
+        })
+        $("a[name=weixin]:eq(1)").hover(function(){
+          $(this).find("#kwcode").show();
+        },function(){
+          $(this).find("#kwcode").hide();
+        })
+      }
+      if($("a[name=weixin]").size() = 1){
+        $("a[name=weixin]").hover(function(){
+          $(this).find("#kwcode").show();
+        },function(){
+          $(this).find("#kwcode").hide();
+        })
+      }
+      
     </script>
   {% endif %}  
   
