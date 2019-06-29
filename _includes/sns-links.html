@@ -111,7 +111,7 @@
   <!-- jQuery -->
   <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
     <script type="text/javascript">
-      $("a[name=weixin]").hover(function(){
+      $("a[name=weixin]:eq(1)").hover(function(){
         $(this).find("#kwcode").show();
       },function(){
         $(this).find("#kwcode").hide();
